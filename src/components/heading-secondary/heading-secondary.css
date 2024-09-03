@@ -1,0 +1,20 @@
+.hedding-seconadary {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    var(--color-green-light),
+    var(--color-green-dark)
+  );
+  background-clip: text;
+  color: transparent;
+  transition: all 0.25s;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.hedding-seconadary:hover {
+  transform: skewY(2deg) scale(1.1);
+}
