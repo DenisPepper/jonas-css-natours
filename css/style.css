@@ -1,21 +1,11 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  padding: 3rem;
-  font-family: Lato, sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777;
-  box-sizing: border-box; }
-
+@import url("./base/_base.scss");
+@import url("./base/_animations");
+@import url("./base/_typography");
+@import url("./base/_utils");
+@import url("./abstracts/_functions");
+@import url("./abstracts/_mixins");
+@import url("./abstracts/_variables");
+@import url("./pages/_home");
 .header {
   height: 95dvh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
