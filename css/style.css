@@ -12,11 +12,11 @@ Dark green: #28b485
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
-  font-size: 1rem;
+  font-size: 62.5%;
 }
 
 body {
@@ -25,6 +25,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
+  box-sizing: border-box;
 }
 
 .header {
@@ -41,17 +42,17 @@ body {
   position: relative;
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -65,7 +66,7 @@ body {
   margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -74,7 +75,7 @@ body {
   animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2.2rem;
   font-weight: 700;
@@ -136,6 +137,7 @@ body {
   border-radius: 10rem;
   transition: transform 0.25s;
   position: relative;
+  font-size: 1.6rem;
 }
 
 .btn:hover {
@@ -166,16 +168,16 @@ body {
   opacity: 0;
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75;
   animation-fill-mode: backwards;
 }
