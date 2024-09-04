@@ -49,6 +49,8 @@
   position: absolute;
   right: 0;
   z-index: 10;
+  -webkit-box-decoration-break: slice;
+  box-decoration-break: slice;
 }
 
 .tour-card__title--gradient-green {
@@ -80,4 +82,22 @@
 
 .tour-card__image--gradient-pink {
   background-image: var(--color-gradient-pink), url('/src/assets/nat-7.jpg');
+}
+
+.tour-card__details ul {
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-card__details li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.tour-card__details li:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
 }

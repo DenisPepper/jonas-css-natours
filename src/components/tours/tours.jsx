@@ -7,17 +7,37 @@ const tours = [
     id: '1',
     appearance: 'gradient-green',
     title: 'The sea explorer',
-    details: 'This is a mocked details of this card ...',
+    details: [
+      '3 day tours',
+      'Up to 30 people',
+      '2 tour guides',
+      'Sleep in cozy hotels',
+      'Difficalty: easy',
+    ],
   },
   {
     id: '2',
     appearance: 'gradient-orange',
     title: 'The forest hiker',
+    details: [
+      '3 day tours',
+      'Up to 30 people',
+      '2 tour guides',
+      'Sleep in cozy hotels',
+      'Difficalty: easy',
+    ],
   },
   {
     id: '3',
     appearance: 'gradient-pink',
     title: 'The snow adventurer',
+    details: [
+      '3 day tours',
+      'Up to 30 people',
+      '2 tour guides',
+      'Sleep in cozy hotels',
+      'Difficalty: easy',
+    ],
   },
 ];
 

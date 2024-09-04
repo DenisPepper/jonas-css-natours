@@ -15,7 +15,13 @@ export function Tour(props) {
         <div className={`tour-card__image tour-card__image--${appearance}`}>
           &nbsp;
         </div>
-        <div className='tour-card__details'>{details}</div>
+        <div className='tour-card__details'>
+          <ul>
+            {details.map((detail) => (
+              <li key={detail}>{detail}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </article>
   );
