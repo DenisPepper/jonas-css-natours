@@ -1,8 +1,5 @@
 .section-features {
-  display: grid;
-  grid-template-columns: repeat(4, 0.8fr);
-  gap: 4rem;
-  justify-content: center;
+    margin-top: -10rem;
   padding: 20rem;
   background-image: linear-gradient(
       to right bottom,
@@ -11,4 +8,17 @@
     ),
     url('/src/assets/nat-4.jpg');
   background-size: cover;
+
+  transform: skewY(-7deg);
+}
+
+.section-features > * {
+  transform: skewY(7deg);
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(4, 0.8fr);
+  gap: 4rem;
+  justify-content: center;
 }

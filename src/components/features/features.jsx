@@ -27,14 +27,16 @@ const features = [
 export function Features() {
   return (
     <section className='section-features'>
-      {features.map((feature) => (
-        <FeatureCard
-          key={feature.title}
-          title={feature.title}
-          text={feature.text}
-          icon={feature.icon}
-        />
-      ))}
+      <div className='features-list'>
+        {features.map((feature) => (
+          <FeatureCard
+            key={feature.title}
+            title={feature.title}
+            text={feature.text}
+            icon={feature.icon}
+          />
+        ))}
+      </div>
     </section>
   );
 }

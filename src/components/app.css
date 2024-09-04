@@ -19,5 +19,6 @@
   .row {
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 22rem;
   }
 }
