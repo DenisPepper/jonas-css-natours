@@ -5,15 +5,19 @@ import { Tour } from '../tour/tour';
 const tours = [
   {
     id: '1',
-    backColor: 'gradient-green',
+    appearance: 'gradient-green',
+    title: 'The sea explorer',
+    details: 'This is a mocked details of this card ...',
   },
   {
     id: '2',
-    backColor: 'gradient-orange',
+    appearance: 'gradient-orange',
+    title: 'The forest hiker',
   },
   {
     id: '3',
-    backColor: 'gradient-pink',
+    appearance: 'gradient-pink',
+    title: 'The snow adventurer',
   },
 ];
 
@@ -25,7 +29,7 @@ export function Tours() {
       </div>
       <div className='tours-list'>
         {tours.map((tour) => (
-          <Tour key={tour.id} backColor={tour.backColor} />
+          <Tour {...tour} key={tour.id} />
         ))}
       </div>
     </section>

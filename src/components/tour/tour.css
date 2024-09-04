@@ -8,33 +8,76 @@
   backface-visibility: hidden;
   border-radius: 3px;
   box-shadow: var(--shadow-default);
+  overflow: hidden;
 }
 
-.tour-card__side--front {
+.tour-card__front-side {
   background-color: white;
   margin-top: -50rem;
 }
 
-.tour-card__side--back {
+.tour-card__back-side {
   transform: rotateY(180deg);
 }
 
-.tour-card__side--back.gradient-green {
+.tour-card__back-side--gradient-green {
   background-image: var(--color-gradient-green);
 }
 
-.tour-card__side--back.gradient-orange {
+.tour-card__back-side--gradient-orange {
   background-image: var(--color-gradient-orange);
 }
 
-.tour-card__side--back.gradient-pink {
+.tour-card__back-side--gradient-pink {
   background-image: var(--color-gradient-pink);
 }
 
-.tour-card:hover .tour-card__side--front {
+.tour-card:hover .tour-card__front-side {
   transform: rotateY(-180deg);
 }
 
-.tour-card:hover .tour-card__side--back {
+.tour-card:hover .tour-card__back-side {
   transform: rotateY(0);
+}
+
+.tour-card__title {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.tour-card__title--gradient-green {
+  background-image: var(--color-gradient-green);
+}
+
+.tour-card__title--gradient-orange {
+  background-image: var(--color-gradient-orange);
+}
+
+.tour-card__title--gradient-pink {
+  background-image: var(--color-gradient-pink);
+}
+
+.tour-card__image {
+  height: 23rem;
+  background-size: cover;
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.tour-card__image--gradient-green {
+  background-image: var(--color-gradient-green), url('/src/assets/nat-5.jpg');
+}
+
+.tour-card__image--gradient-orange {
+  background-image: var(--color-gradient-orange), url('/src/assets/nat-6.jpg');
+}
+
+.tour-card__image--gradient-pink {
+  background-image: var(--color-gradient-pink), url('/src/assets/nat-7.jpg');
 }
