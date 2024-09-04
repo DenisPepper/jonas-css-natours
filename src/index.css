@@ -3,6 +3,22 @@
   --color-green-light: #7ed56f;
   --color-green-medium: #55c57a;
   --color-green-dark: #28b485;
+  --color-gradient-green: linear-gradient(
+    to right bottom,
+    rgba(171, 221, 163, 0.8),
+    rgba(40, 180, 133, 0.8)
+  );
+  --color-gradient-orange: linear-gradient(
+    to right bottom,
+    rgba(235, 203, 171, 0.8),
+    rgba(180, 133, 40, 0.8)
+  );
+  --color-gradient-pink: linear-gradient(
+    to right bottom,
+    rgba(231, 174, 174, 0.8),
+    rgba(180, 40, 56, 0.8)
+  );
+  --shadow-default: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
 *,

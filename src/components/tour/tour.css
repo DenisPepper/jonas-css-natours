@@ -1,0 +1,40 @@
+.tour-card {
+  perspective: 150rem;
+}
+
+.tour-card__side {
+  height: 50rem;
+  transition: transform 0.8s ease;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: var(--shadow-default);
+}
+
+.tour-card__side--front {
+  background-color: white;
+  margin-top: -50rem;
+}
+
+.tour-card__side--back {
+  transform: rotateY(180deg);
+}
+
+.tour-card__side--back.gradient-green {
+  background-image: var(--color-gradient-green);
+}
+
+.tour-card__side--back.gradient-orange {
+  background-image: var(--color-gradient-orange);
+}
+
+.tour-card__side--back.gradient-pink {
+  background-image: var(--color-gradient-pink);
+}
+
+.tour-card:hover .tour-card__side--front {
+  transform: rotateY(180deg);
+}
+
+.tour-card:hover .tour-card__side--back {
+  transform: rotateY(0);
+}
