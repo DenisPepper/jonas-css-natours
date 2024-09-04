@@ -32,7 +32,7 @@
 }
 
 .tour-card:hover .tour-card__side--front {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 .tour-card:hover .tour-card__side--back {
