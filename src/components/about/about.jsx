@@ -19,14 +19,14 @@ export function About() {
         <H2>{data.header2}</H2>
       </div>
       <div className='row'>
-        <div className='col-1-of-2'>
+        <div>
           <H3 cls='u-margin-bottom-small'>{data.header3_1}</H3>
           <P>{data.stub}</P>
           <H3 cls='u-margin-bottom-small'>{data.header3_2}</H3>
           <P>{data.stub}</P>
           <A href='#'>Learn more &rarr;</A>
         </div>
-        <div className='col-2-of-2'>
+        <div>
           <div className='composition'>
             <img
               className='composition__photo composition__photo--p1'

@@ -1,0 +1,38 @@
+.feature-box {
+  display: grid;
+  grid-template-areas:
+    'icon'
+    'title'
+    'text';
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all 0.25s ease-out;
+}
+
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.04);
+}
+
+.feature-box__icon {
+  grid-area: icon;
+  font-size: 6rem;
+  background-image: linear-gradient(
+    to right,
+    var(--color-green-light),
+    var(--color-green-dark)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.feature-box__title {
+  grid-area: title;
+}
+
+.feature-box__text {
+  grid-area: text;
+}
