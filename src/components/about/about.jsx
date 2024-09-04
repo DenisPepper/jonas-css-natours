@@ -26,7 +26,25 @@ export function About() {
           <P>{data.stub}</P>
           <A href='#'>Learn more &rarr;</A>
         </div>
-        <div className='col-2-of-2'>Images</div>
+        <div className='col-2-of-2'>
+          <div className='composition'>
+            <img
+              className='composition__photo composition__photo--p1'
+              src='/src/assets/nat-1-large.jpg'
+              alt='Photo 1'
+            />
+            <img
+              className='composition__photo composition__photo--p2'
+              src='/src/assets/nat-2-large.jpg'
+              alt='Photo 2'
+            />
+            <img
+              className='composition__photo composition__photo--p3'
+              src='/src/assets/nat-3-large.jpg'
+              alt='Photo 3'
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
