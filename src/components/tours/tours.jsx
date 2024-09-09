@@ -52,6 +52,9 @@ export function Tours() {
           <Tour {...tour} key={tour.id} />
         ))}
       </div>
+      <a className='btn btn--green tours__link' href='#'>
+        Discover our tours
+      </a>
     </section>
   );
 }

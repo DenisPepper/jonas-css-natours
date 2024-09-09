@@ -143,6 +143,11 @@
   color: #777;
 }
 
+.btn--green {
+  background-color: var(--color-green-dark);
+  color: white;
+}
+
 .btn--white::after {
   background-color: #fff;
 }

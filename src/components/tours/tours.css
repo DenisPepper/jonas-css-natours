@@ -2,6 +2,8 @@
   background-color: var(--color-gray-light-1);
   padding: 25rem 2rem;
   margin-top: -20dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 .tours-list {
@@ -9,4 +11,12 @@
   grid-template-columns: repeat(3, 0.8fr);
   gap: 4rem;
   justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.tours__link {
+  max-width: 20%;
+  min-width: max-content;
+  text-align: center;
+  align-self: center;
 }
