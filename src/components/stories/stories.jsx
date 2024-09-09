@@ -1,5 +1,6 @@
 import './stories.css';
 import { HeadingSecondary as H2 } from '../heading-secondary/heading-secondary';
+import { TextButton as A } from '../text-button/text-button';
 import { Story } from '../story/story';
 
 const stories = [
@@ -36,6 +37,7 @@ export function Stories() {
           <Story {...story} key={story.id} />
         ))}
       </ul>
+      <A cls='stories__link' href='#'>Read all stories &rarr;</A>
     </section>
   );
 }

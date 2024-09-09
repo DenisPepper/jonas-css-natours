@@ -2,10 +2,17 @@
   padding: 15rem 0;
   background-color: var(--color-gray-light-1);
   margin-top: -20dvh;
+  display: flex;
+  flex-direction: column;
 }
 
 .stories-list {
   margin: 0 auto;
+  padding-bottom: 6rem;
   width: 75%;
   list-style: none;
+}
+
+.stories__link {
+  align-self: center;
 }
