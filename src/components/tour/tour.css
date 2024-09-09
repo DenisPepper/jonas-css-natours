@@ -17,6 +17,8 @@
 }
 
 .tour-card__back-side {
+  text-align: center;
+  font-size: 7rem;
   transform: rotateY(180deg);
 }
 

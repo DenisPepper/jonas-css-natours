@@ -6,7 +6,9 @@ export function Tour(props) {
     <article className='tour-card'>
       <div
         className={`tour-card__side tour-card__back-side tour-card__back-side--${appearance}`}
-      ></div>
+      >
+        Fancy back side content! 😎😎😎
+      </div>
 
       <div className='tour-card__side tour-card__front-side'>
         <h4 className={`tour-card__title tour-card__title--${appearance}`}>
