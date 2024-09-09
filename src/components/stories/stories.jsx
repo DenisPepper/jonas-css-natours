@@ -5,6 +5,7 @@ import { Story } from '../story/story';
 const stories = [
   {
     id: '1',
+    author: 'Mary River',
     imageUrl: '/src/assets/nat-8.jpg',
     title: 'I had the best week ever with my family',
     text: `This is awesome story about my trip witth my family. My trip was fantastic!  
@@ -14,7 +15,8 @@ const stories = [
   },
   {
     id: '2',
-    imageUrl: '/src/assets/nat-7.jpg',
+    author: 'John Woods',
+    imageUrl: '/src/assets/nat-9.jpg',
     title: 'I had the best week ever with my family',
     text: `This is awesome story about my trip witth my family. My trip was fantastic!  
            This is awesome story about my trip witth my family. My trip was fantastic! 
