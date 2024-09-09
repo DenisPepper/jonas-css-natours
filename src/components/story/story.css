@@ -1,0 +1,41 @@
+.story {
+  box-shadow: var(--shadow-default);
+  background-color: white;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+}
+
+.story:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.story__skew-wrapper {
+  transform: skewX(12deg);
+  padding: 6rem;
+  min-height: 25rem;
+}
+
+.story__text-wrapper {
+  grid-area: text;
+}
+
+.story__title {
+  margin-bottom: 1rem;
+}
+
+.story__shape {
+  grid-area: image;
+  background-image: var(--color-gradient-green);
+  width: 15rem;
+  height: 15rem;
+  margin-right: 2rem;
+  border-radius: 50%;
+  clip-path: circle(50% at 50% 50%);
+  float: left;
+  shape-outside: circle(50% at 50% 50%);
+}
+
+.story__foto {
+  height: 100%;
+}

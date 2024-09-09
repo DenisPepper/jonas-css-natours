@@ -1,0 +1,11 @@
+.section-stories {
+  padding: 15rem 0;
+  background-color: var(--color-gray-light-1);
+  margin-top: -20dvh;
+}
+
+.stories-list {
+  margin: 0 auto;
+  width: 75%;
+  list-style: none;
+}
