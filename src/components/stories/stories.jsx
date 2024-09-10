@@ -29,6 +29,13 @@ const stories = [
 export function Stories() {
   return (
     <section className='section-stories'>
+      <div className='bg-video'>
+        <video className='bg-video__content' autoPlay muted loop>
+          <source src='/src/assets/video.mp4' type='video/mp4' />
+          <source src='/src/assets/video.webm' type='video/webm' />
+          Your browser is not siported!
+        </video>
+      </div>
       <div className='u-place-in-center u-margin-bottom-big'>
         <H2>We make people genuinely happy</H2>
       </div>
@@ -37,7 +44,9 @@ export function Stories() {
           <Story {...story} key={story.id} />
         ))}
       </ul>
-      <A cls='stories__link' href='#'>Read all stories &rarr;</A>
+      <A cls='stories__link' href='#'>
+        Read all stories &rarr;
+      </A>
     </section>
   );
 }
