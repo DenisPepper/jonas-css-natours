@@ -1,5 +1,6 @@
 import './App.css';
 import { About } from './about/about';
+import { Book } from './book/book';
 import { Features } from './features/features';
 import { Header } from './header/header';
 import { Stories } from './stories/stories';
@@ -14,6 +15,7 @@ export function App() {
         <Features />
         <Tours />
         <Stories />
+        <Book />
       </main>
     </>
   );
