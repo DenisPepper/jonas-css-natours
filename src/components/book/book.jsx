@@ -8,7 +8,7 @@ export function Book() {
         <H2>Start booking now</H2>
         <div className='book__form'>
           <form className='form'>
-            <fieldset className='form__group'>
+            <div className='form__group'>
               <input
                 className='form__input'
                 type='text'
@@ -20,8 +20,8 @@ export function Book() {
               <label className='form__label' htmlFor='fullname'>
                 Full Name
               </label>
-            </fieldset>
-            <fieldset className='form__group'>
+            </div>
+            <div className='form__group'>
               <input
                 className='form__input'
                 type='email'
@@ -33,7 +33,32 @@ export function Book() {
               <label className='form__label' htmlFor='email'>
                 Email Adress
               </label>
-            </fieldset>
+            </div>
+
+            <div className='form__group form__group-radio'>
+              <input
+                className='form__radio-input'
+                type='radio'
+                name='group-size'
+                id='small'
+              />
+              <label className='form__radio-label' htmlFor='small'>
+                <span className='radio-btn'></span>
+                Small tour group
+              </label>
+            </div>
+            <div className='form__group form__group-radio'>
+              <input
+                className='form__radio-input'
+                type='radio'
+                name='group-size'
+                id='large'
+              />
+              <label className='form__radio-label' htmlFor='large'>
+                <span className='radio-btn'></span>
+                Large tour group
+              </label>
+            </div>
           </form>
         </div>
       </div>
