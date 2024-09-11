@@ -20,6 +20,8 @@ export function Book() {
               <label className='form__label' htmlFor='fullname'>
                 Full Name
               </label>
+            </fieldset>
+            <fieldset className='form__group'>
               <input
                 className='form__input'
                 type='email'
