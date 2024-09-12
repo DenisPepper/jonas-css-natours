@@ -1,41 +1,28 @@
+import { NavItem } from '../nav-item/nav-item';
 import '/src/components/navigation/navigation.css';
+
+const links = [
+  { text: 'About Natours' },
+  { text: 'Your benfits' },
+  { text: 'Popular tours' },
+  { text: 'Stories' },
+  { text: 'Book now' },
+];
 
 export function Navigation() {
   return (
-    <div className='navigation'>
-      <input className='navigation_checkbox' type='checkbox' id='nav_toggler' />
-      <label className='navigation_button' htmlFor='nav_toggler'>
+    <div className='menu'>
+      <input className='menu__checkbox' type='checkbox' id='nav-toggler' />
+      <label className='menu__button' htmlFor='nav-toggler'>
         MENU
       </label>
-      <div className='navigation_background'>&nbsp;</div>
+      <div className='menu__background'>&nbsp;</div>
 
-      <nav className='navigation_nav'>
-        <ul className='navigation_list'>
-          <li className='navigation_list'>
-            <a className='navigation_link' href='#'>
-              About Natours
-            </a>
-          </li>
-          <li className='nav_list'>
-            <a className='nav_link' href='#'>
-              Your benfits
-            </a>
-          </li>
-          <li className='navigation_list'>
-            <a className='navigation_link' href='#'>
-              Popular tours
-            </a>
-          </li>
-          <li className='navigation_list'>
-            <a className='navigation_link' href='#'>
-              Stories
-            </a>
-          </li>
-          <li className='navigation_list'>
-            <a className='navigation_link' href='#'>
-              Book now
-            </a>
-          </li>
+      <nav className='menu__nav-wrapper'>
+        <ul className='menu__list'>
+          {links.map((link) => (
+            <NavItem key={link.text} text={link.text} />
+          ))}
         </ul>
       </nav>
     </div>
