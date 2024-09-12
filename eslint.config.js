@@ -37,3 +37,5 @@ export default [
     },
   },
 ];
+
+// https://github.com/ZhakshylykNasip/eslint-configuration-in-vite/blob/main/VsCodeEslintPrettierInVite.md
