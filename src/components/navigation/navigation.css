@@ -16,6 +16,61 @@
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+.menu_icon {
+  position: relative;
+}
+
+.menu_icon,
+.menu_icon::before,
+.menu_icon::after {
+  display: inline-block;
+  width: 3rem;
+  height: 2px;
+  background-color: grey;
+  transition: all 0.2s;
+}
+
+.menu_icon::before,
+.menu_icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.menu_icon::before {
+  top: -0.8rem;
+}
+
+.menu_icon::after {
+  top: 0.8rem;
+}
+
+.menu__button:hover .menu_icon::before {
+  top: -1rem;
+}
+
+.menu__button:hover .menu_icon::after {
+  top: 1rem;
+}
+
+.menu__checkbox:checked ~ .menu__button .menu_icon {
+  background-color: transparent;
+}
+
+.menu__checkbox:checked ~ .menu__button .menu_icon::before {
+  transform-origin: center;
+  transform: rotate(-135deg);
+  top: 0;
+}
+
+.menu__checkbox:checked ~ .menu__button .menu_icon::after {
+  transform-origin: center;
+  transform: rotate(135deg);
+  top: 0;
 }
 
 .menu__background {

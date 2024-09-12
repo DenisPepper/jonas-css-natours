@@ -14,7 +14,7 @@ export function Navigation() {
     <div className='menu'>
       <input className='menu__checkbox' type='checkbox' id='nav-toggler' />
       <label className='menu__button' htmlFor='nav-toggler'>
-        MENU
+        <span className='menu_icon'></span>
       </label>
       <div className='menu__background'>&nbsp;</div>
 
