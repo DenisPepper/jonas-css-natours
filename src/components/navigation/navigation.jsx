@@ -20,8 +20,8 @@ export function Navigation() {
 
       <nav className='menu__nav-wrapper'>
         <ul className='menu__list'>
-          {links.map((link) => (
-            <NavItem key={link.text} text={link.text} />
+          {links.map((link, index) => (
+            <NavItem key={link.text} text={link.text} number={`${index + 1}.`} />
           ))}
         </ul>
       </nav>
