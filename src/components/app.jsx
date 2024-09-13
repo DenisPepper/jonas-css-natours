@@ -14,6 +14,7 @@ export function App() {
 
   useLayoutEffect(() => {
     window.addEventListener('load', () => {
+      console.log('loaded');
       setIsLoaded(true);
     });
   }, [setIsLoaded]);
