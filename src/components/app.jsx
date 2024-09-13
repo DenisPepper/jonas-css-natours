@@ -17,7 +17,7 @@ export function App() {
       console.log('loaded');
       setIsLoaded(true);
     });
-  }, [setIsLoaded]);
+  }, []);
 
   return (
     <>
