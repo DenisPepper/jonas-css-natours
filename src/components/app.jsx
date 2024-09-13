@@ -1,3 +1,4 @@
+import { useLayoutEffect, useState } from 'react';
 import './app.css';
 import { About } from './about/about';
 import { Book } from './book/book';
@@ -9,17 +10,27 @@ import { Stories } from './stories/stories';
 import { Tours } from './tours/tours';
 
 export function App() {
+  const [loaded, setIsLoaded] = useState(false);
+
+  useLayoutEffect(() => {
+    window.addEventListener('load', () => {
+      setIsLoaded(true);
+    });
+  }, []);
+
   return (
     <>
       <Navigation />
       <Header />
-      <main>
-        <About />
-        <Features />
-        <Tours />
-        <Stories />
-        <Book />
-      </main>
+      {loaded && (
+        <main>
+          <About />
+          <Features />
+          <Tours />
+          <Stories />
+          <Book />
+        </main>
+      )}
       <Popup />
     </>
   );
