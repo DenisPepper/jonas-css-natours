@@ -3,13 +3,11 @@ import { createRoot } from 'react-dom/client';
 import { App } from './components/app.jsx';
 import './index.scss';
 
-window.addEventListener('load', () => {
-  createRoot(document.getElementById('root')).render(
-    <StrictMode>
-      <App />
-    </StrictMode>
-  );
-});
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
 
 // responsive desing
 // https://youtu.be/-iqFeek9E7E
