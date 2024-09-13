@@ -23,7 +23,7 @@
   position: absolute;
   inset: 10rem;
   box-shadow: var(-shadow-default);
-  transform: scale(0);
+  transform: scale(0.5);
   transition: all 0.5s 0.25s;
 }
 
