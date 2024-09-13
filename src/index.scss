@@ -1,0 +1,78 @@
+:root {
+  --color-gray-light-1: #f7f7f7;
+  --color-green-light: #7ed56f;
+  --color-green-medium: #55c57a;
+  --color-green-dark: #28b485;
+  --color-gradient-green: linear-gradient(to right bottom, rgba(171, 221, 163, 0.8), rgba(40, 180, 133, 0.8));
+  --color-gradient-orange: linear-gradient(to right bottom, rgba(235, 203, 171, 0.8), rgba(180, 133, 40, 0.8));
+  --color-gradient-pink: linear-gradient(to right bottom, rgba(231, 174, 174, 0.8), rgba(180, 40, 56, 0.8));
+  --shadow-default: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+// 1em = 16px
+@mixin screen($breakpoint) {
+  @if $breakpoint == phone {
+    // 600px
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    // 900px
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    // 1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desk {
+    // 1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10 px => 10/16 = 62.5%
+
+  @include screen(big-desk) {
+    font-size: 75%; // 1rem = 12 px => 12/16 = 75%
+  }
+
+  @include screen(tab-land) {
+    font-size: 56.25%; // 1rem = 9 px => 9/16 = 56.25%
+  }
+
+  @include screen(tab-port) {
+    font-size: 50%; // 1rem = 8 px => 8/16 = 50%
+  }
+
+  @include screen(phone) {
+    font-size: 31.25%; // 1rem = 5px => 5/16 = 31.25%
+  }
+}
+
+body {
+  padding: 3rem;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  box-sizing: border-box;
+}

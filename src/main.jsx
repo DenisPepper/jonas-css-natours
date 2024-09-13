@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './components/app.jsx';
-import './index.css';
+import './index.scss';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +11,7 @@ createRoot(document.getElementById('root')).render(
 
 // responsive desing
 // https://youtu.be/-iqFeek9E7E
+// https://youtu.be/6dc-cPS0NSo
 
 /* desctop first
 
