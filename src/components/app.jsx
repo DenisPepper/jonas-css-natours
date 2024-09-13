@@ -1,4 +1,4 @@
-import './App.css';
+import './app.css';
 import { About } from './about/about';
 import { Book } from './book/book';
 import { Features } from './features/features';
