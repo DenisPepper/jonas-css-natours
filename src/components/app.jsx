@@ -16,7 +16,7 @@ export function App() {
     window.addEventListener('load', () => {
       setIsLoaded(true);
     });
-  }, []);
+  }, [setIsLoaded]);
 
   return (
     <>
