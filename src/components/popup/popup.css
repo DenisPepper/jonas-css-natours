@@ -1,0 +1,40 @@
+.popup {
+  height: 100dvh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+
+  transition: all 0.25s;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: unset;
+}
+
+.popup__content {
+  background-color: white;
+  position: absolute;
+  inset: 10rem;
+  box-shadow: var(-shadow-default);
+  transform: scale(0);
+  transition: all 0.5s 0.25s;
+}
+
+.popup:target .popup__content {
+  transform: scale(1);
+}
+
+.popup__cross:any-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+  font-size: 2rem;
+}

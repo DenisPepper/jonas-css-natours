@@ -7,7 +7,7 @@ export function Tour(props) {
       <div
         className={`tour-card__side tour-card__back-side tour-card__back-side--${appearance}`}
       >
-        Fancy back side content! 😎😎😎
+        <a href='#popup'>Open popup</a>
       </div>
 
       <div className='tour-card__side tour-card__front-side'>
