@@ -10,28 +10,17 @@ import { Stories } from './stories/stories';
 import { Tours } from './tours/tours';
 
 export function App() {
-  const [loaded, setIsLoaded] = useState(false);
-
-  useLayoutEffect(() => {
-    window.addEventListener('load', () => {
-      console.log('loaded');
-      setIsLoaded(true);
-    });
-  }, []);
-
   return (
     <>
       <Navigation />
       <Header />
-      {loaded && (
-        <main>
-          <About />
-          <Features />
-          <Tours />
-          <Stories />
-          <Book />
-        </main>
-      )}
+      <main>
+        <About />
+        <Features />
+        <Tours />
+        <Stories />
+        <Book />
+      </main>
       <Popup />
     </>
   );
