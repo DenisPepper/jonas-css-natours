@@ -4,6 +4,9 @@ import { Paragraph as P } from '../paragraph/paragraph';
 import { TextButton as A } from '../text-button/text-button';
 
 import './about.css';
+import picPath1 from '/src/assets/nat-1-large.jpg';
+import picPath2 from '/src/assets/nat-2-large.jpg';
+import picPath3 from '/src/assets/nat-3-large.jpg';
 
 const data = {
   header2: 'Exciting tours for adventurous people',
@@ -28,21 +31,9 @@ export function About() {
         </div>
         <div>
           <div className='composition'>
-            <img
-              className='composition__photo composition__photo--p1'
-              src='/src/assets/nat-1-large.jpg'
-              alt='Photo 1'
-            />
-            <img
-              className='composition__photo composition__photo--p2'
-              src='/src/assets/nat-2-large.jpg'
-              alt='Photo 2'
-            />
-            <img
-              className='composition__photo composition__photo--p3'
-              src='/src/assets/nat-3-large.jpg'
-              alt='Photo 3'
-            />
+            <img className='composition__photo composition__photo--p1' src={picPath1} alt='Photo 1' />
+            <img className='composition__photo composition__photo--p2' src={picPath2} alt='Photo 2' />
+            <img className='composition__photo composition__photo--p3' src={picPath3} alt='Photo 3' />
           </div>
         </div>
       </div>

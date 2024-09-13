@@ -2,12 +2,14 @@ import './stories.css';
 import { HeadingSecondary as H2 } from '../heading-secondary/heading-secondary';
 import { TextButton as A } from '../text-button/text-button';
 import { Story } from '../story/story';
+import picPath8 from '/src/assets/nat-8.jpg';
+import picPath9 from '/src/assets/nat-9.jpg';
 
 const stories = [
   {
     id: '1',
     author: 'Mary River',
-    imageUrl: '/src/assets/nat-8.jpg',
+    imageUrl: picPath8,
     title: 'I had the best week ever with my family',
     text: `This is awesome story about my trip witth my family. My trip was fantastic!  
            This is awesome story about my trip witth my family. My trip was fantastic! 
@@ -17,7 +19,7 @@ const stories = [
   {
     id: '2',
     author: 'John Woods',
-    imageUrl: '/src/assets/nat-9.jpg',
+    imageUrl: picPath9,
     title: 'I had the best week ever with my family',
     text: `This is awesome story about my trip witth my family. My trip was fantastic!  
            This is awesome story about my trip witth my family. My trip was fantastic! 
