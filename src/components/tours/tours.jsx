@@ -1,4 +1,4 @@
-import './tours.css';
+import './tours.scss';
 import { HeadingSecondary as H2 } from '../heading-secondary/heading-secondary';
 import { Tour } from '../tour/tour';
 

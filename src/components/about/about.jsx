@@ -3,7 +3,7 @@ import { HeadingTertiary as H3 } from '../heading-tertiary/heading-tertiary';
 import { Paragraph as P } from '../paragraph/paragraph';
 import { TextButton as A } from '../text-button/text-button';
 
-import './about.css';
+import './about.scss';
 import picPath1 from '/src/assets/nat-1-large.jpg';
 import picPath2 from '/src/assets/nat-2-large.jpg';
 import picPath3 from '/src/assets/nat-3-large.jpg';

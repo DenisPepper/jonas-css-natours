@@ -1,11 +1,24 @@
+@import '/src/index.scss';
+
 .section-about {
   background-color: var(--color-gray-light-1);
   padding: 25rem 0;
   margin-top: -20dvh;
+
+  @include screen(tab-port) {
+    padding: 20rem 0;
+  }
 }
 
 .composition {
   position: relative;
+
+  @include screen(tab-port) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
 }
 
 .composition__photo {
@@ -15,6 +28,10 @@
   position: absolute;
   transition: all 0.25s ease-out;
   z-index: 10;
+
+  @include screen(tab-port) {
+    position: unset;
+  }
 }
 
 .composition__photo:hover {

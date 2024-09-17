@@ -1,5 +1,5 @@
 import { FeatureCard } from '../feachure-card/feature-card.jsx';
-import './features.css';
+import './features.scss';
 
 const features = [
   {
