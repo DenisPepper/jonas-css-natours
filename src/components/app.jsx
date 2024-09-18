@@ -1,4 +1,3 @@
-import { useLayoutEffect, useState } from 'react';
 import './app.css';
 import { About } from './about/about';
 import { Book } from './book/book';
@@ -8,6 +7,7 @@ import { Navigation } from './navigation/navigation';
 import { Popup } from './popup/popup';
 import { Stories } from './stories/stories';
 import { Tours } from './tours/tours';
+import { Footer } from './footer/footer';
 
 export function App() {
   return (
@@ -21,6 +21,7 @@ export function App() {
         <Stories />
         <Book />
       </main>
+      <Footer />
       <Popup />
     </>
   );
