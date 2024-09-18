@@ -10,7 +10,7 @@ export function Footer() {
       <div className='footer__logo-wrapper'>
         <picture className='footer__logo'>
           <source srcSet={`${logoGreen1xSmall} 1x, ${logoGreen2xSmall} 2x`} media='(max-width: 37.5em)' />
-          <img srcSet={`${logoGreen1x} 1x, ${logoGreen2x} 2x`} alt='Full logo' />
+          <img srcSet={`${logoGreen1x} 1x, ${logoGreen2x} 2x`} alt='Full logo' src={logoGreen1x} />
         </picture>
       </div>
     </footer>
