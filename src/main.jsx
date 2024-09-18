@@ -24,3 +24,12 @@ normal syles
 1800 +         big screens
 
 */
+
+// responsive images
+// https://youtu.be/GoErjVeTaPc
+// https://youtu.be/bQHrbZdmRSk
+// https://youtu.be/i95vfhmEbGI
+// https://youtu.be/YEUDAzT9GzQ
+
+// Testing for Browser Support with supports
+// https://youtu.be/zTPIOOFQVVU
