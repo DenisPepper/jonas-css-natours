@@ -1,6 +1,6 @@
-import './header.css';
+import './header.scss';
 import logo from '/src/assets/logo-white.png';
-
+  
 export function Header() {
   return (
     <header className='header'>

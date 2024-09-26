@@ -1,15 +1,17 @@
 .header {
   height: 95dvh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 133, 0.8)
-    ),
-    url('/src/assets/hero.jpg');
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),
+    url('/src/assets/hero-small.jpg');
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75dvh, 0 100%);
   position: relative;
+
+  /* для экранов с высоким разрешением (DPR2) и шире телефона */
+  @media (min-resolution: 192dpi) and (min-width: 600px) {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),
+      url('/src/assets/hero.jpg');
+  }
 }
 
 .header__logo-box {
