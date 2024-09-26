@@ -8,9 +8,9 @@
   position: relative;
 
   /* для экранов с высоким разрешением (DPR2) и шире телефона */
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),
-    (--webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-    (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (--webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),
       url('/src/assets/hero.jpg');
   }
