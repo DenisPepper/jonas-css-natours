@@ -76,3 +76,8 @@ body {
   color: #777;
   box-sizing: border-box;
 }
+
+::selection {
+  background-color: var(--color-green-medium);
+  color: white;
+}
