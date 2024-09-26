@@ -32,4 +32,5 @@ normal syles
 // https://youtu.be/YEUDAzT9GzQ
 
 // Testing for Browser Support with supports
+// адаптация под старые браузеры
 // https://youtu.be/zTPIOOFQVVU
