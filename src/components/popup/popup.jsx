@@ -1,4 +1,4 @@
-import './popup.css';
+import './popup.scss';
 
 export function Popup() {
   return (
